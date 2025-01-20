@@ -3,8 +3,9 @@ import "./globals.css";
 import Link from "next/link";
 
 export const metadata = {
-  title: "LoonTune Clone",
-  description: "A clone of my WordPress site built in Next.js",
+  title: "LoonTune",
+  description:
+    "A nature toy that brings the calming sound of the loon to life.",
 };
 
 export default function RootLayout({
@@ -14,30 +15,47 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col">
-        <header className="bg-gray-800 text-white p-4">
-          <div className="container mx-auto flex justify-between items-center">
-            <h1 className="text-xl font-bold">
-              <Link href="/">LoonTune Clone</Link>
+      <body className="min-h-screen flex flex-col bg-marion-light">
+        <header className="bg-marion text-white p-6 shadow-md">
+          <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <h1 className="text-2xl font-bold">
+              <Link href="/" className="text-white hover:text-marion-accent">
+                LoonTune
+              </Link>
             </h1>
-            <nav>
-              <ul className="flex space-x-4">
+            <nav className="mt-4 md:mt-0">
+              <ul className="flex space-x-6">
                 <li>
-                  <Link href="/">Home</Link>
+                  <Link
+                    href="/"
+                    className="text-white hover:text-marion-accent"
+                  >
+                    Home
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/about">About</Link>
+                  <Link
+                    href="/about"
+                    className="text-white hover:text-marion-accent"
+                  >
+                    About
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/blog">Blog</Link>
+                  <Link
+                    href="/featured-on-tv"
+                    className="text-white hover:text-marion-accent"
+                  >
+                    Featured on TV
+                  </Link>
                 </li>
               </ul>
             </nav>
           </div>
         </header>
-        <main className="flex-grow container mx-auto p-4">{children}</main>
-        <footer className="bg-gray-200 text-center p-4">
-          © {new Date().getFullYear()} LoonTune Clone. All rights reserved.
+        <main className="flex-grow container mx-auto p-6">{children}</main>
+        <footer className="bg-marion-accent text-white text-center p-4 border-t border-marion">
+          © {new Date().getFullYear()} LoonTune. All rights reserved.
         </footer>
       </body>
     </html>
