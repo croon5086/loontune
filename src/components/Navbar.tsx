@@ -1,4 +1,4 @@
-"use client"; // Only the navbar needs this
+"use client";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -41,13 +41,15 @@ export default function Navbar() {
 
       {/* Mobile Navigation Dropdown */}
       <div
-        className={`md:hidden flex flex-col items-center bg-marion-light shadow-md transition-all duration-300 ${
+        className={`md:hidden bg-marion-dark shadow-md transition-all duration-300 ${
           isOpen
             ? "max-h-screen opacity-100 py-4"
             : "max-h-0 opacity-0 overflow-hidden"
         }`}
       >
-        <NavLinks mobile />
+        <ul className="flex flex-col items-center space-y-4 py-4 text-lg">
+          <NavLinks mobile />
+        </ul>
       </div>
     </header>
   );
