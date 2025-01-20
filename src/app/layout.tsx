@@ -1,11 +1,45 @@
-// src/app/layout.tsx
 import "./globals.css";
-import Link from "next/link";
+import Navbar from "../components/Navbar"; // Import the Navbar component
 
 export const metadata = {
-  title: "LoonTune",
+  title: "LoonTune - Experience the Call of the Loon",
   description:
     "A nature toy that brings the calming sound of the loon to life.",
+  icons: {
+    icon: [
+      { rel: "icon", url: "/favicon.ico", type: "image/x-icon" },
+      {
+        rel: "icon",
+        url: "/favicon-16x16.png",
+        sizes: "16x16",
+        type: "image/png",
+      },
+      {
+        rel: "icon",
+        url: "/favicon-32x32.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
+      {
+        rel: "apple-touch-icon",
+        url: "/apple-touch-icon.png",
+        sizes: "180x180",
+      },
+      {
+        rel: "icon",
+        url: "/android-chrome-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        rel: "icon",
+        url: "/android-chrome-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
+    ],
+  },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
@@ -16,60 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen flex flex-col bg-marion-light">
-        <header className="bg-marion text-white p-6 shadow-md">
-          <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-            <h1 className="text-2xl font-bold">
-              <Link href="/" className="text-white hover:text-marion-accent">
-                LoonTune
-              </Link>
-            </h1>
-            <nav className="mt-4 md:mt-0">
-              <ul className="flex space-x-6">
-                <li>
-                  <Link
-                    href="/"
-                    className="text-white hover:text-marion-accent"
-                  >
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/buy"
-                    className="text-white hover:text-marion-accent"
-                  >
-                    Buy
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/instructions"
-                    className="text-white hover:text-marion-accent"
-                  >
-                    How it Works
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    href="/about"
-                    className="text-white hover:text-marion-accent"
-                  >
-                    History
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/featured-on-tv"
-                    className="text-white hover:text-marion-accent"
-                  >
-                    Featured on TV
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </header>
+        <Navbar /> {/* Uses the separate Navbar component */}
         <main className="flex-grow container mx-auto p-6">{children}</main>
         <footer className="bg-marion-accent text-white text-center p-4 border-t border-marion">
           © {new Date().getFullYear()} LoonTune. All rights reserved.
