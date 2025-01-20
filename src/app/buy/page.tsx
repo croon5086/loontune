@@ -1,7 +1,7 @@
 "use client";
 
 export default function BuyPage() {
-  const emailAddress = "sales@loontune.com"; // Update to your actual sales email
+  const emailAddress = "info@loontune.com"; // Update to your actual sales email
   const subject = encodeURIComponent("Wholesale Inquiry - LoonTune");
   const body = encodeURIComponent(
     "Hello,\n\nI'm interested in carrying LoonTune in my store. Please provide details on wholesale pricing and order minimums.\n\nBest regards,\n[Your Name]\n[Your Business Name]"
