@@ -26,6 +26,8 @@ export default function FeaturedOnTV() {
               the common loon. In this segment, learn how entrepreneur Russ
               Rooney transformed the simple idea into a popular family business
               through meticulous experimentation and creative assembly.
+              (KSTP&apos;s On the Road with Jason Davis - Originally aired
+              2/18/07)
             </p>
           </section>
 
@@ -45,7 +47,8 @@ export default function FeaturedOnTV() {
               This segment from the Ron Shara show features the LoonTune&apos;s
               distinctive sound that captures the many voices of the common
               loon, blending authentic call imitations with behind-the-scenes
-              insights into its creation.
+              insights into its creation. (Ron Schara’s Minnesota Bound -
+              Originally aired 12/18/05 )
             </p>
           </section>
         </div>
