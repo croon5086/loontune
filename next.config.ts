@@ -2,12 +2,12 @@
 import { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Set the base path to the repository name (adjust if necessary)
-  basePath: "/loontune",
-  // Optional: If your site uses asset prefixes, set them accordingly:
-  assetPrefix: "/loontune/",
-  // Make sure output is static
+  // If you're deploying a static export (like for GitHub Pages)
   output: "export",
+
+  // If you previously configured basePath/assetPrefix for GitHub Pages, comment or remove them for Vercel:
+  // basePath: '/loontune',
+  // assetPrefix: '/loontune/',
 };
 
 export default nextConfig;
