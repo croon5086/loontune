@@ -1,45 +1,54 @@
-// app/buy/page.tsx
-"use client"; // use client if you need interactivity like state
-import { useState } from "react";
+"use client";
 
 export default function BuyPage() {
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    // Here you would send the email to your backend or an API endpoint
-    setMessage("Thank you for your interest! We will be in touch.");
-    setEmail("");
-  };
+  const emailAddress = "sales@loontune.com"; // Update to your actual sales email
+  const subject = encodeURIComponent("Wholesale Inquiry - LoonTune");
+  const body = encodeURIComponent(
+    "Hello,\n\nI'm interested in carrying LoonTune in my store. Please provide details on wholesale pricing and order minimums.\n\nBest regards,\n[Your Name]\n[Your Business Name]"
+  );
 
   return (
     <div className="min-h-screen bg-marion-light p-6 flex items-center justify-center">
       <div className="max-w-xl w-full bg-white rounded-lg shadow-md p-8">
         <h2 className="text-3xl font-bold text-marion text-center mb-6">
-          Get Your LoonTune Now!
+          Wholesale Orders for LoonTune
         </h2>
-        <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
-          <label htmlFor="email" className="text-marion font-medium">
-            Enter your email to order:
-          </label>
-          <input
-            type="email"
-            id="email"
-            placeholder="info@loontune.com"
-            className="border border-gray-300 rounded p-2"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-          <button
-            type="submit"
-            className="bg-marion text-white rounded p-2 hover:bg-marion-dark transition-colors"
+
+        {/* Wholesale Info Section */}
+        <p className="text-lg text-gray-800 text-center mb-4">
+          The LoonTune™ is primarily available for bulk orders and wholesale
+          purchases. We work with retailers, gift shops, nature centers, and
+          distributors.
+        </p>
+        <p className="text-gray-700 text-center mb-4">
+          If you&apos;re interested in carrying LoonTunes in your store, please
+          reach out for a quote, pricing, and order details.
+        </p>
+
+        {/* Contact Information */}
+        <div className="text-center mb-6">
+          <p className="text-lg font-semibold text-marion">
+            For Wholesale Inquiries:
+          </p>
+          <a
+            href={`mailto:${emailAddress}?subject=${subject}&body=${body}`}
+            className="text-marion hover:text-marion-accent underline text-lg"
           >
-            Submit
-          </button>
-          {message && <p className="text-green-600 text-center">{message}</p>}
-        </form>
+            {emailAddress}
+          </a>
+        </div>
+
+        <hr className="my-6 border-marion" />
+
+        {/* Button to Open Email Client */}
+        <div className="text-center">
+          <a
+            href={`mailto:${emailAddress}?subject=${subject}&body=${body}`}
+            className="bg-marion text-white font-medium px-6 py-3 rounded-lg shadow-md hover:bg-marion-dark transition-colors"
+          >
+            Email Us for Pricing
+          </a>
+        </div>
       </div>
     </div>
   );

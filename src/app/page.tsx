@@ -95,9 +95,9 @@ export default function HomePage() {
             As Seen on TV!
           </h2>
           <p className="text-lg text-gray-800 text-center mb-6">
-            The &quot;LoonTune™&quot; has been featured on &quot;Channel 5 with
-            Jason Davis&quot; and the &quot;Ron Schara Show&quot;, showcasing
-            its unique ability to mimic the calls of the loon.
+            The LoonTune™ has been featured on Channel 5 with Jason Davis and
+            the Ron Schara Show, showcasing its unique ability to mimic the
+            calls of the loon.
           </p>
           <div className="flex justify-center">
             <Link href="/featured-on-tv">
@@ -116,17 +116,16 @@ export default function HomePage() {
             How Does the LoonTune Work?
           </h2>
           <p className="text-lg text-gray-800 text-center mb-6">
-            The &quot;LoonTune™&quot; makes &quot;two authentic loon
-            calls&quot;—just like the real bird!
+            The LoonTune™ makes two authentic loon calls—just like the real
+            bird!
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <h3 className="text-xl font-bold text-marion mb-2">Tremolo</h3>
               <p className="text-gray-700">
-                Often described as &quot;“insane laughter”&quot;, the Tremolo is
-                a rapid series of notes that loons use as an &quot;alarm
-                call&quot;. It is also the &quot;only&quot; call they make in
-                flight.
+                Often described as &quot;insane laughter&quot;, the Tremolo is a
+                rapid series of notes that loons use as an alarm call. It is
+                also the only call they make in flight.
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg">
@@ -155,14 +154,12 @@ export default function HomePage() {
             Made in the USA!
           </h2>
           <p className="text-lg text-gray-800 text-center">
-            Your &quot;LoonTune™&quot; is proudly crafted in
-            &quot;Minnesota&quot; with sustainable, locally sourced birch
-            handles.
+            Your LoonTune™ is proudly crafted in Minnesota with sustainable,
+            locally sourced birch handles.
           </p>
           <p className="text-lg text-gray-700 text-center">
-            Every unit is &quot;hand-assembled&quot; in the &quot;Twin
-            Cities&quot;, ensuring the highest quality while supporting local
-            craftsmanship.
+            Every unit is hand-assembled in the Twin Cities, ensuring the
+            highest quality while supporting local craftsmanship.
           </p>
         </section>
 
