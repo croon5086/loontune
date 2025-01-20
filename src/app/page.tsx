@@ -1,5 +1,5 @@
-// src/app/page.tsx or pages/index.tsx
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -39,6 +39,59 @@ export default function HomePage() {
               Discover the originality and craftsmanship behind every LoonTune –
               a perfect blend of art, nature, and tradition.
             </p>
+          </div>
+        </section>
+
+        <hr className="border-marion my-10" />
+
+        {/* LoonTune Sounds Section */}
+        <section className="mb-12">
+          <h4 className="text-3xl font-bold text-center mb-8 text-marion">
+            The LoonTune Makes Two Authentic Calls
+          </h4>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <h3 className="text-xl font-bold text-marion mb-2">Tremolo</h3>
+              <p className="text-gray-700">
+                Often described as **“insane laughter”**, the Tremolo is a rapid
+                series of notes that loons use as an alarm call. It is also the
+                **only** call they make in flight.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <h3 className="text-xl font-bold text-marion mb-2">Wail</h3>
+              <p className="text-gray-700">
+                The haunting Wail call echoes across lakes, used by loons to
+                keep in contact with one another. It is often heard at night and
+                can carry for miles.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <hr className="border-marion my-10" />
+
+        {/* Call-to-Action Buttons */}
+        <section className="text-center mb-12">
+          <h4 className="text-2xl font-bold text-marion mb-6">
+            Want to Learn More or Get Your Own LoonTune?
+          </h4>
+          <div className="flex flex-col md:flex-row justify-center gap-6">
+            <Link href="/instructions">
+              <button className="bg-marion text-white py-3 px-6 rounded-lg shadow-md hover:bg-marion-dark transition">
+                How it Works
+              </button>
+            </Link>
+            <Link href="/buy">
+              <button className="bg-marion text-white py-3 px-6 rounded-lg shadow-md hover:bg-green-700 transition">
+                History
+              </button>
+            </Link>
+            <Link href="/buy">
+              <button className="bg-marion text-white py-3 px-6 rounded-lg shadow-md hover:bg-green-700 transition">
+                Buy Now
+              </button>
+            </Link>
           </div>
         </section>
 
@@ -97,28 +150,6 @@ export default function HomePage() {
                 Every unit is meticulously crafted, assembled, and packaged in
                 the Twin Cities—a true testament to American craftsmanship.
               </p>
-              <div className="flex items-center gap-4">
-                <div className="flex-shrink-0">
-                  <Image
-                    className="rounded-lg shadow-2xl"
-                    src="/assets/mnoutline.jpg"
-                    alt="Minnesota Outline"
-                    width={82}
-                    height={94}
-                  />
-                </div>
-                <p className="text-lg text-gray-700">
-                  Learn more about Minnesota at{" "}
-                  <a
-                    href="http://www.exploreminnesota.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-marion hover:text-marion-accent underline"
-                  >
-                    exploreminnesota.com
-                  </a>
-                </p>
-              </div>
             </div>
           </div>
         </section>

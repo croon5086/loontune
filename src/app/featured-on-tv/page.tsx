@@ -9,33 +9,45 @@ export default function FeaturedOnTV() {
 
         <div className="space-y-12">
           {/* Video 1 */}
-          <div className="aspect-video relative">
-            <video controls className="w-full rounded-lg shadow-2xl">
-              <source src="/assets/loontune-channel-5.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <p className="mt-4 text-marion text-center">
+          <section className="space-y-4">
+            <div className="aspect-video relative">
+              <video
+                controls
+                className="w-full rounded-lg shadow-2xl"
+                aria-label="LoonTune Featured on Jason Davis Show"
+              >
+                <source src="/assets/loontune-channel-5.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <p className="text-marion text-center">
               Discover the story behind the LoonTune as featured on the Jason
               Davis show — a unique nature toy inspired by the natural calls of
               the common loon. In this segment, learn how entrepreneur Russ
               Rooney transformed the simple idea into a popular family business
               through meticulous experimentation and creative assembly.
             </p>
-          </div>
+          </section>
 
           {/* Video 2 - Ron Shara Show */}
-          <div className="aspect-video relative">
-            <video controls className="w-full rounded-lg shadow-2xl">
-              <source src="/assets/loontune-ron.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <p className="mt-4 text-marion text-center">
+          <section className="space-y-4">
+            <div className="aspect-video relative">
+              <video
+                controls
+                className="w-full rounded-lg shadow-2xl"
+                aria-label="LoonTune on Ron Shara Show"
+              >
+                <source src="/assets/loontune-ron.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <p className="text-marion text-center">
               This segment from the Ron Shara show features the LoonTune&apos;s
               distinctive sound that captures the many voices of the common
               loon, blending authentic call imitations with behind-the-scenes
               insights into its creation.
             </p>
-          </div>
+          </section>
         </div>
       </div>
     </div>

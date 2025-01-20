@@ -35,10 +35,27 @@ export default function RootLayout({
                 </li>
                 <li>
                   <Link
+                    href="/buy"
+                    className="text-white hover:text-marion-accent"
+                  >
+                    Buy
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/instructions"
+                    className="text-white hover:text-marion-accent"
+                  >
+                    How it Works
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
                     href="/about"
                     className="text-white hover:text-marion-accent"
                   >
-                    About
+                    History
                   </Link>
                 </li>
                 <li>
