@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+````
+# LoonTune Clone
 
-## Getting Started
+A clone of my WordPress site built with Next.js and Tailwind CSS.
 
-First, run the development server:
+## Table of Contents
+
+- [Installation](#installation)
+- [Development](#development)
+- [Building](#building)
+- [Deployment](#deployment)
+- [Project Structure](#project-structure)
+- [License](#license)
+
+## Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/<your-username>/loontune.git
+   cd loontune
+````
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+## Development
+
+To run the project locally in development mode, use:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the website.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Building
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To build the project and generate static files:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+This command will build the project and export your site as static HTML into the `out/` folder.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment to GitHub Pages
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Build the project:**
 
-## Deploy on Vercel
+   ```bash
+   npm run build
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Deploy:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   npm run deploy
+   ```
+
+This will deploy your static site to the `gh-pages` branch of your repository.
+
+> **Note:** GitHub Pages works best for public repositories. If your repository is private, you may need to upgrade your GitHub plan or use a different hosting solution.
+
+## Project Structure
+
+```
+loontune/
+├── node_modules/           # Installed npm packages
+├── public/                 # Static assets (e.g., images, favicon.ico)
+├── src/
+│   ├── app/                # Application code
+│   │   ├── globals.css     # Global styles
+│   │   ├── layout.tsx      # Common layout for all pages
+│   │   └── page.tsx        # Homepage
+│   ├── about/              # About page folder
+│   │   └── page.tsx
+│   └── blog/               # Blog page folder
+│       └── page.tsx
+├── .gitignore              # Files/Folders ignored by Git
+├── next.config.ts          # Next.js configuration
+├── package-lock.json       # NPM lock file
+├── package.json            # NPM project manifest
+├── postcss.config.mjs      # PostCSS configuration
+├── README.md               # Project documentation
+└── tailwind.config.ts      # Tailwind CSS configuration
+```
+
+## License
+
+[MIT](LICENSE)
+
+```
+
+```
