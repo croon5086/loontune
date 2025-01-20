@@ -1,9 +1,74 @@
-/* src/app/globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Your custom global styles here */
+/* Custom Global Styles */
 body {
-  font-family: sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #eef2f7; /* Light, airy background inspired by nature */
+  color: #333; /* Dark enough for readability */
+  line-height: 1.6;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Georgia", serif;
+  color: #203647; /* A deep Marion Blue tone for headings */
+}
+
+/* Links */
+a {
+  color: #203647; /* Match links with our heading color */
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #4062bb; /* A brighter blue for hover state */
+}
+
+/* Buttons (if needed) */
+.btn {
+  @apply px-4 py-2 rounded bg-blue-700 text-white hover:bg-blue-600;
+}
+
+/* Additional Component Styling */
+header,
+footer {
+  font-family: "Georgia", serif;
+}
+
+/* Feel-Good Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Utility: relaxed spacing */
+p {
+  margin-bottom: 1.25rem;
+}
+
+/* Custom Colors: Marion Blue and complimentary accents */
+.bg-marion-light {
+  background-color: #eef2f7; /* Light background, similar to body */
+}
+
+.bg-marion {
+  background-color: #203647; /* Deep Marion Blue for darker sections */
+}
+
+.bg-marion-accent {
+  background-color: #4062bb; /* Accent blue for buttons, links hover, etc. */
+}
+
+.text-marion {
+  color: #203647;
+}
+
+.border-marion {
+  border-color: #4062bb;
 }

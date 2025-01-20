@@ -1,10 +1,45 @@
-// src/app/layout.tsx
 import "./globals.css";
-import Link from "next/link";
+import Navbar from "../components/Navbar"; // Import the Navbar component
 
 export const metadata = {
-  title: "LoonTune Clone",
-  description: "A clone of my WordPress site built in Next.js",
+  title: "LoonTune - Experience the Call of the Loon",
+  description:
+    "A nature toy that brings the calming sound of the loon to life.",
+  icons: {
+    icon: [
+      { rel: "icon", url: "/favicon.ico", type: "image/x-icon" },
+      {
+        rel: "icon",
+        url: "/favicon-16x16.png",
+        sizes: "16x16",
+        type: "image/png",
+      },
+      {
+        rel: "icon",
+        url: "/favicon-32x32.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
+      {
+        rel: "apple-touch-icon",
+        url: "/apple-touch-icon.png",
+        sizes: "180x180",
+      },
+      {
+        rel: "icon",
+        url: "/android-chrome-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        rel: "icon",
+        url: "/android-chrome-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
+    ],
+  },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
@@ -14,30 +49,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col">
-        <header className="bg-gray-800 text-white p-4">
-          <div className="container mx-auto flex justify-between items-center">
-            <h1 className="text-xl font-bold">
-              <Link href="/">LoonTune Clone</Link>
-            </h1>
-            <nav>
-              <ul className="flex space-x-4">
-                <li>
-                  <Link href="/">Home</Link>
-                </li>
-                <li>
-                  <Link href="/about">About</Link>
-                </li>
-                <li>
-                  <Link href="/blog">Blog</Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </header>
-        <main className="flex-grow container mx-auto p-4">{children}</main>
-        <footer className="bg-gray-200 text-center p-4">
-          © {new Date().getFullYear()} LoonTune Clone. All rights reserved.
+      <body className="min-h-screen flex flex-col bg-marion-light">
+        <Navbar /> {/* Uses the separate Navbar component */}
+        <main className="flex-grow container mx-auto p-6">{children}</main>
+        <footer className="bg-marion-accent text-white text-center p-4 border-t border-marion">
+          © {new Date().getFullYear()} LoonTune. All rights reserved.
         </footer>
       </body>
     </html>
