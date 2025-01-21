@@ -76,7 +76,7 @@ function NavLinks({ mobile = false }: { mobile?: boolean }) {
         href="/buy"
         className="text-white hover:text-marion-accent px-4 py-2"
       >
-        Buy
+        Wholesale Orders
       </Link>
       <Link
         href="/featured-on-tv"
