@@ -156,8 +156,7 @@ export default function HomePage() {
             Made in the USA!
           </h2>
           <p className="text-lg text-gray-800 text-center">
-            The LoonTune™ is proudly crafted in Minnesota using sustainable,
-            locally sourced birch handles.
+            The LoonTune™ is proudly crafted in Minnesota.
           </p>
           <p className="text-lg text-gray-700 text-center">
             Every unit is hand-assembled in the Twin Cities, ensuring the
@@ -169,21 +168,9 @@ export default function HomePage() {
 
         {/* Call-to-Action Buttons */}
         <section className="text-center">
-          <h4 className="text-xl sm:text-2xl font-bold text-marion mb-6">
-            Get Your Own LoonTune Today!
-          </h4>
-          <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
-            <Link href="/buy">
-              <button className="bg-marion text-white py-3 px-6 rounded-lg shadow-md hover:bg-green-700 transition">
-                Wholesale
-              </button>
-            </Link>
-            <Link href="/instructions">
-              <button className="bg-marion text-white py-3 px-6 rounded-lg shadow-md hover:bg-marion-dark transition">
-                How It Works
-              </button>
-            </Link>
-          </div>
+          <p className="text-lg text-gray-700 text-center">
+            U.S. Pat. 7,997,951
+          </p>
         </section>
       </div>
     </div>
