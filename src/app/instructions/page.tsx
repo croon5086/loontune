@@ -80,9 +80,6 @@ export default function InstructionsPage() {
           <p className="mt-6 text-center text-black-600 font-semibold text-sm sm:text-base">
             ⚠️ Adult supervision is recommended for children using this product.
           </p>
-          <p className="text-center text-black-600 text-sm sm:text-base">
-            ⚠️ Caution: The string may break with prolonged use.
-          </p>
         </section>
       </div>
     </div>

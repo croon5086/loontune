@@ -29,7 +29,7 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row justify-center mt-8 gap-4 sm:gap-6">
             <Link href="/buy">
               <button className="bg-marion text-white py-3 px-6 rounded-lg shadow-md hover:bg-green-700 transition">
-                Buy Now
+                Wholesale
               </button>
             </Link>
             <Link href="/instructions">
@@ -50,9 +50,9 @@ export default function HomePage() {
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/2">
               <p className="mb-4 text-lg text-gray-800">
-                The LoonTune journey began with Russ Rooney, an entrepreneur
-                from Richfield, Minnesota, who set out to replicate the haunting
-                calls of the Common Loon.
+                Over twenty years ago, the LoonTune journey began with Russ
+                Rooney, an entrepreneur from Richfield, Minnesota, who set out
+                to replicate the haunting calls of the Common Loon.
               </p>
               <p className="mb-4 text-lg text-gray-700">
                 What started as a garage experiment turned into a family
@@ -175,7 +175,7 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
             <Link href="/buy">
               <button className="bg-marion text-white py-3 px-6 rounded-lg shadow-md hover:bg-green-700 transition">
-                Buy Now
+                Wholesale
               </button>
             </Link>
             <Link href="/instructions">
