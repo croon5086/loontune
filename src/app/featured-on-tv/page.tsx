@@ -13,7 +13,7 @@ export default function FeaturedOnTV() {
         </p>
 
         <div className="space-y-10">
-          {/* Video 1 - Jason Davis Show */}
+          {/* Commercial */}
           <section className="space-y-4">
             <div className="aspect-video relative">
               <video

@@ -7,6 +7,11 @@ import { useState } from "react";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleLinkClick = () => {
+    // Collapse the mobile nav when a link is clicked
+    setIsOpen(false);
+  };
+
   return (
     <header className="bg-marion text-white p-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
@@ -48,7 +53,7 @@ export default function Navbar() {
         }`}
       >
         <ul className="flex flex-col items-center space-y-4 py-4 text-lg">
-          <NavLinks mobile />
+          <NavLinks mobile onLinkClick={handleLinkClick} />
         </ul>
       </div>
     </header>
@@ -56,36 +61,50 @@ export default function Navbar() {
 }
 
 // Navigation Links Component (Reusable for Desktop & Mobile)
-function NavLinks({ mobile = false }: { mobile?: boolean }) {
+function NavLinks({
+  mobile = false,
+  onLinkClick,
+}: {
+  mobile?: boolean;
+  onLinkClick?: () => void;
+}) {
   return (
     <div
       className={`flex ${
         mobile ? "flex-col space-y-3" : "space-x-8"
       } text-center`}
     >
-      <Link href="/" className="text-white hover:text-marion-accent px-4 py-2">
+      <Link
+        href="/"
+        onClick={mobile ? onLinkClick : undefined}
+        className="text-white hover:text-marion-accent px-4 py-2"
+      >
         Home
       </Link>
       <Link
         href="/instructions"
+        onClick={mobile ? onLinkClick : undefined}
         className="text-white hover:text-marion-accent px-4 py-2"
       >
         How It Works
       </Link>
       <Link
         href="/buy"
+        onClick={mobile ? onLinkClick : undefined}
         className="text-white hover:text-marion-accent px-4 py-2"
       >
         Wholesale Orders
       </Link>
       <Link
         href="/featured-on-tv"
+        onClick={mobile ? onLinkClick : undefined}
         className="text-white hover:text-marion-accent px-4 py-2"
       >
         Featured on TV
       </Link>
       <Link
         href="/about"
+        onClick={mobile ? onLinkClick : undefined}
         className="text-white hover:text-marion-accent px-4 py-2"
       >
         History
