@@ -19,6 +19,28 @@ export default function FeaturedOnTV() {
               <video
                 controls
                 className="w-full rounded-lg shadow-2xl"
+                aria-label="The LoonTune Commercial"
+              >
+                <source
+                  src="/assets/loontune-commercial.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <p className="text-gray-800 text-center text-sm sm:text-base">
+              The LoonTune Commerical
+            </p>
+            <p className="text-center text-gray-500 text-xs sm:text-sm">
+              📺 LoonTune
+            </p>
+          </section>
+          {/* Video 1 - Jason Davis Show */}
+          <section className="space-y-4">
+            <div className="aspect-video relative">
+              <video
+                controls
+                className="w-full rounded-lg shadow-2xl"
                 aria-label="LoonTune Featured on Jason Davis Show"
               >
                 <source src="/assets/loontune-channel-5.mp4" type="video/mp4" />

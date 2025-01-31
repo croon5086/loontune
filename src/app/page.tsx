@@ -93,8 +93,8 @@ export default function HomePage() {
             As Seen on TV!
           </h2>
           <p className="text-lg text-gray-800 text-center mb-6">
-            The LoonTune™ has been featured on Channel 5’s On the Road with
-            Jason Davis and Ron Schara’s Minnesota Bound, showcasing its unique
+            The LoonTune™ has been featured on KSTP’s On the Road with Jason
+            Davis and Ron Schara’s Minnesota Bound, showcasing its unique
             ability to mimic the authentic loon calls.
           </p>
           <div className="flex justify-center">
